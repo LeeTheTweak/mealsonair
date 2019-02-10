@@ -1,0 +1,418 @@
+// Variables
+$mainGreen: #79c079;
+$darkGreen: #136913;
+$darkGrey: #acacac;
+$text: #424242;
+/************************/
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+/********** HEADER ****************************/
+header {
+    width: auto;
+    background-color: white;
+    box-shadow: 1px 2px 20px $darkGrey;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0;
+    position: fixed;
+
+    ul {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            padding-right: 100px;
+
+            button {
+                padding: 0 20px 0 20px;
+                background-color: $mainGreen;
+                color: white;
+                border: none;
+                &:hover {
+                    cursor: pointer;
+                    -webkit-transition: 150ms ease-in;
+                    -ms-transition: 150ms ease-in;
+                    transition:  105ms ease-in;
+                    background-color: $darkGreen;
+                }
+            }
+
+            h2 {
+                font-size: 30px;
+                color: #424242;
+                span {
+                    color: $mainGreen;
+                }
+            }
+
+            form {
+                div {
+                    i {
+                        padding-left: 5px;
+                        color: $darkGrey;
+                    }
+                    display: inline-block;
+                    position: relative;
+                    top: 1px;
+                    border: 1px solid $darkGrey;
+                    &:hover {
+                        -webkit-transition: 200ms ease-in;
+                        -ms-transition: 200ms ease-in;
+                        transition: 200ms ease-in;
+                        border: 1px solid black;
+                    }
+                }
+                input {
+                    width: 300px;
+                    height: 30px;
+                    padding-left: 10px;
+                    font-weight: 200;
+                    font-size: 15px;
+                    border: none;
+                    &:focus {
+                        outline-width: 0;
+                    }
+                }
+                button {
+                    height: 35px;
+                }
+            }
+
+
+            a {
+                button {
+                    height: 35px;
+                }
+            }
+        }
+        #signButtons {
+            display: inline-block;
+            li {
+                padding-right: 5px !important;
+            }
+        }
+    }
+}
+#header-mobile {
+    display: none;
+}
+@media only screen and (max-width: 960px) {
+    header {
+        display: none;
+    }
+    #header-mobile {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        #header {
+            padding: 0 0 10px 0;
+            #downloadApp {
+                float: left;
+                width: 100%;
+                padding: 5px;
+                background-color: #dddddd;
+                margin: 0;
+                img {
+                    margin: 0;
+                    border-radius: 3px;
+                    width: 30px;
+                    display: inline-block;
+                }
+                #textDiv {
+                    display: inline-block;
+                    #headline {
+                    margin: 0;
+                }
+                #subTitle {
+                    margin: 0;
+                    font-size: 10px;
+                }
+              } 
+              #installDiv {
+                  float: right;
+                  h1 {
+                    color: $mainGreen;
+                    font-size: 15px;
+                    margin: 0;
+                }
+              } 
+            }
+            ul {
+                margin: 0;
+                text-align: center;
+                li {
+                    padding-right: 30px;
+                    list-style-type: none;
+                    display: inline-block;
+                    span {
+                        color: $mainGreen;
+                        font-weight: bold;
+                    }
+                    button {
+                        width: 80px;
+                        border: 1px solid $darkGrey;
+                        background: none;
+                        padding: 5px 15px 5px 15px;
+                    }
+                }
+            }
+            h1 {
+                padding: 5px;
+                font-size: 28px;
+            }
+            form {
+                margin: 5px;
+            }
+            #form-mobile {
+                border: 1px solid $darkGrey;
+                width: 225px;
+                
+                div {
+                    padding-left: 5px;
+                    i {
+                        font-size: 13px;
+                    }
+                    input {
+                        width: 205px;
+                        border: none;
+                        &:focus {
+                            outline-width: 0;
+                        }
+                    }  
+                }
+            }
+        }
+    }
+}
+
+/********** END OF HEADER ********************************/
+
+
+
+/********** START CONTENT 1 ******************************/
+#content1 {
+    width: auto;
+    overflow: hidden;
+    margin-top: 87px;
+    padding: 10px 150px 10px 150px;
+    background-color: #e7e7e7;
+
+    #description1 {
+        margin: 10px 0 0 0;
+        float: left;
+        h1 {
+            font-size: 2vw;
+            color: $text;
+        }
+        p {
+            line-height: 1.6em;
+            font-size: 1.4vw;
+        }      
+    }
+
+    #burgerContainer {
+        img {
+            width: 300px;
+            margin: 13px 0 0 0;
+            float: right;
+        }
+    }
+}
+@media only screen and (max-width: 960px) {
+    #content1 {
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        #description1 {
+            float: none;
+            margin: 0;
+            h1 {
+                font-size: 18px;
+            }
+            p {
+                display: none;
+            }
+        }
+
+        #burgerContainer {
+            img {
+                width: 100px;
+                margin: 13px 0 0 0;
+                float: none;
+            }
+        }
+    }
+}
+/*********** END OF CONTENT 1 **************************/
+
+
+/*********** START OF CONTENT 2 *******************/
+#content2 {
+    width: auto;
+    overflow: hidden;
+    padding: 10px 80px 10px 80px;
+    margin: auto;
+    background-color: white;
+
+    #droneContainer {
+        img {
+            width: 400px;
+            float: left;
+        }
+    }
+
+    #description2 {
+        float: right;
+        margin-top: 200px;
+        h1 {
+            font-size: 2vw;
+            color: $text;
+        }
+        p {
+            line-height: 1.6em;
+            font-size: 1.4vw;
+        }      
+    }
+}
+@media only screen and (max-width: 960px) {
+    #content2 {
+        text-align: center;
+        padding: 5px;
+        text-align: center;
+       #droneContainer {
+        img {
+            width: 200px;
+            float: none;
+      }
+    } 
+    #description2 {
+        float: none;
+        margin-top: 0;
+        h1 {
+            font-size: 18px;
+        }
+        p {
+            display: none;
+        }
+    }
+  }  
+}
+
+/*************** END OF CONTENT 2 *********************/
+
+
+
+/*************** START OF CONTENT 3 *******************/
+#content3 {
+    width: auto;
+    overflow: hidden;
+    padding: 100px 50px 100px 50px;
+    background-color: #e7e7e7;
+    color: black;
+    font-size: 1.4vw;
+
+    h2 {
+        font-weight: 300;
+        color: $text;
+    }
+    p {
+        line-height: 1.6em;
+        color: $text;
+    }
+    a {
+        text-decoration: none;
+        font-weight: 400;
+        color: #13b113;
+        &:hover {
+            i {
+                padding-left: 5px;
+            }
+        }
+    }
+    #yourChoice {
+        float: left;
+    }
+    hr {
+        display: none;
+    }
+    #buyADrone {
+        float: right;
+    }
+}
+@media only screen and (max-width: 960px) {
+    #content3 {
+        padding: 30px;
+        font-size: 20px;
+
+        #yourChoice {
+            padding-bottom: 10px;
+        }
+
+        hr {
+            display: block;
+        }
+    }
+}
+
+/**************** END OF CONTENT 3 *********************/
+
+
+
+footer {
+    width: auto;
+    overflow: hidden;
+    background-color: #424242;
+    color: white;
+    padding: 40px 50px 40px 50px;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #footerTitle {
+        h2 {
+            color: white;
+            font-size: 40px;
+        }
+    }
+    #extraContentContainer {
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 1.4vw;
+    }
+    #socialLinks {
+        color: white;
+        float: left;
+        padding-right: 10%;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            padding-right: 15px;
+        }
+    }
+    #extraInfo1 {
+        float: left;
+        padding-right: 10%;
+        li {
+            list-style-type: none;
+            line-height: 3em;
+        }
+    }
+    #extraInfo2 {
+        float: left;
+        li {
+            list-style-type: none;
+            line-height: 2em;
+        }
+    }
+}

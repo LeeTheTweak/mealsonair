@@ -1,0 +1,377 @@
+/************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+/********** HEADER ****************************/
+header {
+  width: auto;
+  background-color: white;
+  box-shadow: 1px 2px 20px #acacac;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+header ul {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+header ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 100px;
+}
+header ul li button {
+  padding: 0 20px 0 20px;
+  background-color: #79c079;
+  color: white;
+  border: none;
+}
+header ul li button:hover {
+  cursor: pointer;
+  -webkit-transition: 150ms ease-in;
+  -ms-transition: 150ms ease-in;
+  transition: 105ms ease-in;
+  background-color: #136913;
+}
+header ul li h2 {
+  font-size: 30px;
+  color: #424242;
+}
+header ul li h2 span {
+  color: #79c079;
+}
+header ul li form div {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  border: 1px solid #acacac;
+}
+header ul li form div i {
+  padding-left: 5px;
+  color: #acacac;
+}
+header ul li form div:hover {
+  -webkit-transition: 200ms ease-in;
+  -ms-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+  border: 1px solid black;
+}
+header ul li form input {
+  width: 300px;
+  height: 30px;
+  padding-left: 10px;
+  font-weight: 200;
+  font-size: 15px;
+  border: none;
+}
+header ul li form input:focus {
+  outline-width: 0;
+}
+header ul li form button {
+  height: 35px;
+}
+header ul li a button {
+  height: 35px;
+}
+header ul #signButtons {
+  display: inline-block;
+}
+header ul #signButtons li {
+  padding-right: 5px !important;
+}
+
+#header-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  header {
+    display: none;
+  }
+
+  #header-mobile {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #header-mobile #header {
+    padding: 0 0 10px 0;
+  }
+  #header-mobile #header #downloadApp {
+    float: left;
+    width: 100%;
+    padding: 5px;
+    background-color: #dddddd;
+    margin: 0;
+  }
+  #header-mobile #header #downloadApp img {
+    margin: 0;
+    border-radius: 3px;
+    width: 30px;
+    display: inline-block;
+  }
+  #header-mobile #header #downloadApp #textDiv {
+    display: inline-block;
+  }
+  #header-mobile #header #downloadApp #textDiv #headline {
+    margin: 0;
+  }
+  #header-mobile #header #downloadApp #textDiv #subTitle {
+    margin: 0;
+    font-size: 10px;
+  }
+  #header-mobile #header #downloadApp #installDiv {
+    float: right;
+  }
+  #header-mobile #header #downloadApp #installDiv h1 {
+    color: #79c079;
+    font-size: 15px;
+    margin: 0;
+  }
+  #header-mobile #header ul {
+    margin: 0;
+    text-align: center;
+  }
+  #header-mobile #header ul li {
+    padding-right: 30px;
+    list-style-type: none;
+    display: inline-block;
+  }
+  #header-mobile #header ul li span {
+    color: #79c079;
+    font-weight: bold;
+  }
+  #header-mobile #header ul li button {
+    width: 80px;
+    border: 1px solid #acacac;
+    background: none;
+    padding: 5px 15px 5px 15px;
+  }
+  #header-mobile #header h1 {
+    padding: 5px;
+    font-size: 28px;
+  }
+  #header-mobile #header form {
+    margin: 5px;
+  }
+  #header-mobile #header #form-mobile {
+    border: 1px solid #acacac;
+    width: 225px;
+  }
+  #header-mobile #header #form-mobile div {
+    padding-left: 5px;
+  }
+  #header-mobile #header #form-mobile div i {
+    font-size: 13px;
+  }
+  #header-mobile #header #form-mobile div input {
+    width: 205px;
+    border: none;
+  }
+  #header-mobile #header #form-mobile div input:focus {
+    outline-width: 0;
+  }
+}
+/********** END OF HEADER ********************************/
+/********** START CONTENT 1 ******************************/
+#content1 {
+  width: auto;
+  overflow: hidden;
+  margin-top: 87px;
+  padding: 10px 150px 10px 150px;
+  background-color: #e7e7e7;
+}
+#content1 #description1 {
+  margin: 10px 0 0 0;
+  float: left;
+}
+#content1 #description1 h1 {
+  font-size: 2vw;
+  color: #424242;
+}
+#content1 #description1 p {
+  line-height: 1.6em;
+  font-size: 1.4vw;
+}
+#content1 #burgerContainer img {
+  width: 300px;
+  margin: 13px 0 0 0;
+  float: right;
+}
+
+@media only screen and (max-width: 960px) {
+  #content1 {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+  }
+  #content1 #description1 {
+    float: none;
+    margin: 0;
+  }
+  #content1 #description1 h1 {
+    font-size: 18px;
+  }
+  #content1 #description1 p {
+    display: none;
+  }
+  #content1 #burgerContainer img {
+    width: 100px;
+    margin: 13px 0 0 0;
+    float: none;
+  }
+}
+/*********** END OF CONTENT 1 **************************/
+/*********** START OF CONTENT 2 *******************/
+#content2 {
+  width: auto;
+  overflow: hidden;
+  padding: 10px 80px 10px 80px;
+  margin: auto;
+  background-color: white;
+}
+#content2 #droneContainer img {
+  width: 400px;
+  float: left;
+}
+#content2 #description2 {
+  float: right;
+  margin-top: 200px;
+}
+#content2 #description2 h1 {
+  font-size: 2vw;
+  color: #424242;
+}
+#content2 #description2 p {
+  line-height: 1.6em;
+  font-size: 1.4vw;
+}
+
+@media only screen and (max-width: 960px) {
+  #content2 {
+    text-align: center;
+    padding: 5px;
+    text-align: center;
+  }
+  #content2 #droneContainer img {
+    width: 200px;
+    float: none;
+  }
+  #content2 #description2 {
+    float: none;
+    margin-top: 0;
+  }
+  #content2 #description2 h1 {
+    font-size: 18px;
+  }
+  #content2 #description2 p {
+    display: none;
+  }
+}
+/*************** END OF CONTENT 2 *********************/
+/*************** START OF CONTENT 3 *******************/
+#content3 {
+  width: auto;
+  overflow: hidden;
+  padding: 100px 50px 100px 50px;
+  background-color: #e7e7e7;
+  color: black;
+  font-size: 1.4vw;
+}
+#content3 h2 {
+  font-weight: 300;
+  color: #424242;
+}
+#content3 p {
+  line-height: 1.6em;
+  color: #424242;
+}
+#content3 a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #13b113;
+}
+#content3 a:hover i {
+  padding-left: 5px;
+}
+#content3 #yourChoice {
+  float: left;
+}
+#content3 hr {
+  display: none;
+}
+#content3 #buyADrone {
+  float: right;
+}
+
+@media only screen and (max-width: 960px) {
+  #content3 {
+    padding: 30px;
+    font-size: 20px;
+  }
+  #content3 #yourChoice {
+    padding-bottom: 10px;
+  }
+  #content3 hr {
+    display: block;
+  }
+}
+/**************** END OF CONTENT 3 *********************/
+footer {
+  width: auto;
+  overflow: hidden;
+  background-color: #424242;
+  color: white;
+  padding: 40px 50px 40px 50px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer #footerTitle h2 {
+  color: white;
+  font-size: 40px;
+}
+footer #extraContentContainer {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.4vw;
+}
+footer #socialLinks {
+  color: white;
+  float: left;
+  padding-right: 10%;
+}
+footer #socialLinks li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 15px;
+}
+footer #extraInfo1 {
+  float: left;
+  padding-right: 10%;
+}
+footer #extraInfo1 li {
+  list-style-type: none;
+  line-height: 3em;
+}
+footer #extraInfo2 {
+  float: left;
+}
+footer #extraInfo2 li {
+  list-style-type: none;
+  line-height: 2em;
+}
+
+/*# sourceMappingURL=index.css.map */
