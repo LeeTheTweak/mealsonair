@@ -1,0 +1,85 @@
+$mainGreen: #79c079;
+$darkGreen: #136913;
+$darkGrey: #acacac;
+$text: #424242;
+
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    color: $text;
+}
+
+#formContainer {
+    width: 100%;
+    margin: 6% 0 0 0;
+    text-align: center;
+
+    form {
+        a {
+            color: $text;
+            text-decoration: none;
+        }
+        display: inline-block;
+        .subText {
+            color: $mainGreen;
+            
+        }
+        h1 {
+            font-size: 3em;
+        }
+        h2 {
+            font-size: 2.6em;
+            text-align: left;
+        }
+        h3 {
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 10px;
+            font-size: 20px;
+                &:focus {
+                outline-width: 0;
+            }
+        }
+        button {
+            width: 100%;
+            height: 40px;
+            background-color: $mainGreen;
+            color: white;
+            font-size: 20px;
+                &:hover {
+                    transition: 500ms ease-in;
+                    -webkit-transition: 500ms ease-in;
+                    -ms-transition: 500ms ease-in;
+                    background-color: $darkGreen;
+                }
+        }
+    }
+}
+
+footer {
+    background-color: $text;
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 5px 0 5px;
+    p {
+        display: inline-block;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    #privacyTerms {
+        float: right;
+    }
+}
