@@ -13,21 +13,28 @@
         
         <header>
             <nav>
-                <ul>
-                    <li><h2 id="title"><span>Meals</span> on <span>Air</span></h2></li>
-                    <li>
-                        <form action="">
+                <!-- ANGULAR -->
+                <div ng-app="addressApp" ng-controller="myController">
+                    <ul>
+                        <li><h2 id="title"><span>Meals</span> on <span>Air</span></h2></li>
+                        <li>
+                            <form action="">
+                            
                             <div>
-                                <i class="fas fa-map-marker-alt"></i><input placeholder="Enter your delivery addresss..">
+                                <i class="fas fa-map-marker-alt"></i><input type="text" placeholder="Enter your delivery addresss.." ng-model="addressInput">
                             </div>
-                            <button>Find Food</button>
-                        </form>
-                    </li>
-                    <div id="signButtons">
-                        <li id="signInButton"><a href="signIn.html"><button>Sign In</button></a></li>
-                        <li id="signUpButton"><a href="signUp.html"><button>Sign Up</button></a></li>
-                    </div>
-                </ul>
+                                <button>Find Food</button>
+                            </form>
+                        </li>
+                        <div id="signButtons">
+                            <li id="signInButton"><a href="signIn.html"><button>Sign In</button></a></li>
+                            <li id="signUpButton"><a href="signUp.html"><button>Sign Up</button></a></li>
+                        </div>
+                    </ul>
+                    <br>
+                    <h2 style="font-size: 30px; color: white; text-shadow: 3px 2px 10px green;">{{addressInput}}</h2>
+                </div>
+                <!-- ANGULAR -->
             </nav> 
         </header>
 
@@ -162,5 +169,9 @@
             </div>
         </footer>
 
+    <!----------------------------- SCRIPTS --------------------------------->
+
+        <script src="scripts/angular.js"></script>
+        <script src="scripts/index.js"></script>
     </body>
 </html>
